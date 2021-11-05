@@ -18,17 +18,17 @@ state("isaac-ng", "1.06.J820")
     int curse:   0x0078A454, 0xC;
 
     // Checkpoint is a custom item planted at the end of a run in the Racing+ mod
-    int cpCount: 0x0078A454, 0x1B710, 0x0, 0x15D0, 0xB7C; // "Checkpoint" (ID 735) count
+    int cpCount: 0x0078A454, 0x1B710, 0x0, 0x15D0, 0xB80; // "Checkpoint" (ID 736) count
 
     // Reset is a custom item used by the Racing+ mod to signal the AutoSplitter that the mod is sending the player back to the first character
-    int resetCount: 0x0078A454, 0x1B710, 0x0, 0x15D0, 0xB80; // "Reset" (ID 736) count
+    int resetCount: 0x0078A454, 0x1B710, 0x0, 0x15D0, 0xB84; // "Reset" (ID 737) count
 
     // Equivalent Lua: Game():GetPlayer(0):GetCollectibleNum(734)
     // 0x1B710  - PlayerVectorPtr
     // 0x0    - Player1
     // 0x15D0 - Player1 CollectibleNum Vector Ptr
     // 0xB80 - Item 736 count - current
-    // 0xB7C - Item 735 count - current
+    // 0xB84 - Item 737 count - current
 }
 
 startup
