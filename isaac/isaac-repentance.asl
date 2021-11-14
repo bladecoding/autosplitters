@@ -5,15 +5,14 @@
 
 state("isaac-ng", "1.7.5")
 {
-    int character:     0x007D2CFC, 0x110;
-
-    // 0x0078A46C - GlobalsPtr
+    // 0x007C9B0C - GlobalsPtr
     int wins:          0x007C9B0C, 0xE44;
+    int character:     0x007C9B0C, 0x1EA690;
     int winstreak:     0x007C9B0C, 0x31C;
-    int frameCounter: 0x007C9B0C, 0x4A230;
+    int frameCounter:  0x007C9B0C, 0x4A230;
 
 
-    // 0x0078A454 - GamePtr (which is the same thing as the Lua "game" pointer)
+    // 0x007C9AEC - GamePtr (which is the same thing as the Lua "game" pointer)
     int timer:   0x007C9AEC, 0x1A2E20;
     int floor:   0x007C9AEC, 0x0;
     int curse:   0x007C9AEC, 0x243528;
