@@ -3,28 +3,28 @@
 // Original code by Hyphen-ated
 // Checkpoint code & pointer annotations by blcd/Zamiel
 
-state("isaac-ng", "1.7.5")
+state("isaac-ng", "1.7.6")
 {
-    // 0x007C9B0C - GlobalsPtr
-    int wins:          0x007C9B0C, 0xE44;
-    int character:     0x007C9B0C, 0x1EA690;
-    int winstreak:     0x007C9B0C, 0x31C;
-    int frameCounter:  0x007C9B0C, 0x4A230;
+    // 0x007CABBC - GlobalsPtr
+    int wins:          0x007CABBC, 0xE44;
+    int character:     0x007CABBC, 0x1EA690;
+    int winstreak:     0x007CABBC, 0x31C;
+    int frameCounter:  0x007CABBC, 0x4A230;
 
 
-    // 0x007C9AEC - GamePtr (which is the same thing as the Lua "game" pointer)
-    int timer:   0x007C9AEC, 0x1A2E20;
-    int floor:   0x007C9AEC, 0x0;
-    int curse:   0x007C9AEC, 0x243528;
+    // 0x007CAB9C - GamePtr (which is the same thing as the Lua "game" pointer)
+    int timer:   0x007CAB9C, 0x1A3070;
+    int floor:   0x007CAB9C, 0x0;
+    int curse:   0x007CAB9C, 0x243778;
 
     // Checkpoint is a custom item planted at the end of a run in the Racing+ mod
-    int cpCount: 0x007C9AEC, 0x1B800, 0x0, 0x15E0, 0xB8C; // "Checkpoint" (ID 739) count
+    int cpCount: 0x007CAB9C, 0x1BA50, 0x0, 0x15E0, 0xB8C; // "Checkpoint" (ID 739) count
 
     // Reset is a custom item used by the Racing+ mod to signal the AutoSplitter that the mod is sending the player back to the first character
-    int resetCount: 0x007C9AEC, 0x1B800, 0x0, 0x15E0, 0xB90; // "Reset" (ID 740) count
+    int resetCount: 0x007CAB9C, 0x1BA50, 0x0, 0x15E0, 0xB90; // "Reset" (ID 740) count
 
     // Equivalent Lua: Game():GetPlayer(0):GetCollectibleNum(734)
-    // 0x1B800  - PlayerVectorPtr
+    // 0x1BA50  - PlayerVectorPtr
     // 0x0    - Player1
     // 0x15E0 - Player1 CollectibleNum Vector Ptr
     // 0xB8C - Item 739 count - current
