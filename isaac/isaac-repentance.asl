@@ -3,13 +3,13 @@
 // Original code by Hyphen-ated
 // Checkpoint code & pointer annotations by blcd/Zamiel
 
-state("isaac-ng", "1.7.7")
+state("isaac-ng", "1.7.7a")
 {
     // 0x007CE24C - GlobalsPtr
     int wins:          0x007CE24C, 0xE44;
-    int character:     0x007CE24C, 0x1EA600;
+    int character:     0x007CE24C, 0x1EA714;
     int winstreak:     0x007CE24C, 0x31C;
-    int frameCounter:  0x007CE24C, 0x4A1A0;
+    int frameCounter:  0x007CE24C, 0x4A2B4;
 
 
     // 0x007CE22C - GamePtr (which is the same thing as the Lua "game" pointer)
